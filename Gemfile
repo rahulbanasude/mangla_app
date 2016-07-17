@@ -35,6 +35,7 @@ group :development do
 gem 'capistrano', '~> 3.5'
 gem 'capistrano-rails', '~> 1.1', '>= 1.1.7'
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
+gem 'capistrano-passenger', '~> 0.2.0'
 end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
