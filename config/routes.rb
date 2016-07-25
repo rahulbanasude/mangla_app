@@ -1,9 +1,17 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  get 'pages/index'
-root to: 'pages#index'
+   get 'pages/home'
 
+root 'pages#home'
+get 'pages/videos'
+get 'galleries/bridal'
+get 'galleries/portfolio'
+
+  resources :categories do
+    resources :galleries, only: [:bridal, :portfolio]
+
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

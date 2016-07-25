@@ -1,0 +1,100 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import 'normalize';
+
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+
+    }
+
+.carousel-inner {
+
+  max-height: 600px;
+  overflow: hidden;
+}
+  .carousel-inner > .item img {
+    width: 100%;
+    height: auto;
+  }
+
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.carousel-warpper{
+  
+}
+.navbar-wrapper{
+  padding-top: 1em;
+}
+
+
+footer {
+
+      background-color: #011627;
+      color: white;
+      padding: 15px;
+
+ .icons{
+width: 140px;
+opacity: 0.8;
+margin: auto;
+margin-top: 5%;
+a{
+  margin-right: 1em;
+}
+img{
+  width: 30px;
+  height:30px; 
+  
+  
+  
+}
+    }
+  .icons a:hover{
+  opacity: 0.5;
+  }  
+
+ }
+ a{
+ color: #011627;
+ text-decoration: none !important;
+ }
