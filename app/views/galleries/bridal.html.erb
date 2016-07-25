@@ -1,0 +1,13 @@
+<div class="portfolio">
+<div class="container">
+
+<div class="title">
+<h1>Bridal</h1>
+</div>
+<% @galleries.each do |gallery| %>
+<%= link_to gallery.image.url do %>
+<%= image_tag gallery.image.url(:medium) %>
+<% end %>
+<% end %>
+</div>
+</div>
