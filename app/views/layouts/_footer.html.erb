@@ -2,14 +2,19 @@
 
    <div class="icons">
 	<%= link_to (image_tag ("insta.svg")), "https://www.instagram.com", target: "_blank" %>
-	<%= link_to (image_tag ("twitter.svg")), "https://twitter.com/manglabanasude", target: "_blank"%>
-	<%= link_to (image_tag ("facebook.svg")), "https://www.facebook.com/manglabanasude", target: "_blank"%>
+	<%= link_to (image_tag ("twitter.svg")), "https://www.twitter.com", target: "_blank"%>
+	<%= link_to (image_tag ("facebook.svg")), "https://www.facebook.com", target: "_blank"%>
 </div>
-  <div class="foot-nav">
+<div class="foot-nav">
  <ul>
-      
-     </ul>
-     </div>  
 
+  <%= link_to "Videos",  pages_videos_path %>
+  <%= link_to "Portfolio", galleries_portfolio_path %>
+  <%= link_to "Bridal",  galleries_bridal_path  %>
+  <%= link_to "Contact", pages_contact_us_path %>
+ </ul>
+</div>  
+
+</div>
 
 </footer>

@@ -7,6 +7,7 @@ root 'pages#home'
 get 'pages/videos'
 get 'galleries/bridal'
 get 'galleries/portfolio'
+get 'pages/contact_us'
 
   resources :categories do
     resources :galleries, only: [:bridal, :portfolio]
