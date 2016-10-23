@@ -26,12 +26,15 @@
     }
 
 
-    /* Add a gray background color and some padding to the footer 
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
+     /*Add a gray background color and some padding to the footer */ 
+    .footer {
+    .container-fluid{
+     padding-top: 3.3em;
     }
-    */
+      
+     
+    }
+    
  
   .carousel-inner {
 
@@ -231,3 +234,27 @@ footer .foot-nav ul > a {
     color: white;
     margin-right: 0.5em;
     }
+
+
+.contact_body{
+  float: right;
+    margin-top: 10em;
+  p{
+  
+  text-align: justify;
+
+  margin-right: 9em;  
+  }
+  .icons{
+    margin-top: 5%;
+    img{
+      width: 30px;
+        height:30px; 
+    }
+
+  }
+  .icons a:hover{
+  opacity: 0.5;
+  }  
+  
+}
