@@ -6,7 +6,7 @@
 </div>
 <% @galleries.each do |gallery| %>
 <%= link_to gallery.image.url do %>
-<%= image_tag gallery.image.url(:medium) %>
+<%= image_tag gallery.image.url, class: "image" %>
 <% end %>
 <% end %>
 </div>
