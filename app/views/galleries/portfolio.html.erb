@@ -6,8 +6,10 @@
 </div>
 
 <% @galleries.each do |gallery| %>
+<div class="col-sm-4"> 
 <%= link_to gallery.image.url do %>
 <%= image_tag gallery.image.url, class: "image" %>
+</div>
 <% end %>
 <% end %>
 </div>
