@@ -13,6 +13,7 @@ get 'pages/contact_us'
     resources :galleries, only: [:bridal, :portfolio]
 
   end
+  resources :contacts, only: [:new, :create]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
