@@ -14,7 +14,9 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
       <li class="<%= is_active?(root_path)%>"><%= link_to "Home",  root_path %></li>
-      
+      <li class="<%= is_active?(pages_training_path)%>"><%= link_to "Training",  pages_training_path %></li>
+      <li class="<%= is_active?(pages_service_path)%>"><%= link_to "Service",  pages_service_path %></li>
+      <li class="<%= is_active?(posts_path)%>"><%= link_to "Blogs",  posts_path %></li>
       <li class="<%= is_active?(pages_videos_path)%>"><%= link_to "Videos",  pages_videos_path %></li>
       
             

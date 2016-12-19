@@ -1,13 +1,20 @@
 Rails.application.routes.draw do
+  get 'posts/index'
+
+  get 'posts/show'
+
+  mount Ckeditor::Engine => '/ckeditor'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
    get 'pages/home'
-
-root 'pages#home'
-get 'pages/videos'
-get 'galleries/bridal'
-get 'galleries/portfolio'
-get 'pages/contact_us'
+  resources :posts, only: [:index, :show]
+  root 'pages#home'
+  get 'pages/videos'
+  get 'galleries/bridal'
+  get 'galleries/portfolio'
+  get 'pages/contact_us'
+  get 'pages/training'
+  get 'pages/service'
 
   resources :categories do
     resources :galleries, only: [:bridal, :portfolio]
