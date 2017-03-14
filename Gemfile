@@ -30,7 +30,8 @@ gem 'cancan' # or cancancan
 gem 'draper'
 gem 'pundit'
 gem 'ckeditor'
-
+gem 'jquery-turbolinks'
+gem 'meta-tags'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

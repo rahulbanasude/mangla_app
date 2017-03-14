@@ -15,27 +15,20 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import 'normalize';
-@import 'w3';
+@import 'grid';
+@import 'style';
+@import 'camera';
+@import 'contact-form';
+@import 'google-map';
+@import 'jquery.fancybox.css';
+@import 'animate';
 
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-      font-family: initial;
-    }
+.contact_body{
+  float: right;
+  margin-top: 2em;
+}
+     /*Add a gray background color and some padding to the footer */
 
-
-     /*Add a gray background color and some padding to the footer */ 
-    .footer {
-    .container-fluid{
-     padding-top: 3.3em;
-    }
-      
-     
-    }
-    
- 
   .carousel-inner {
 
   max-height: 600px;
@@ -50,214 +43,38 @@
   /* Hide the carousel text when the screen is less than 600 pixels wide */
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; 
+      display: none;
     }
   }
-.dropdown .dropdown-menu {
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
-
-    max-height: 0;
-    display: block;
-    overflow: hidden;
-    opacity: 0;
-}
-
-.dropdown.open .dropdown-menu {
-    max-height: 300px;
-    opacity: 1;
-}
-
-
-
-.carousel-warpper{
-  
-}
-.navbar-wrapper{
-  padding-top: 1em;
-}
-
-
-.about_me{
-padding-top: 2em;
-.para1{
-text-align: justify;
-padding: 5% 0% 0%;
-float: right;
-width: 50%;
-font-size: 1.1em;
-
-  }
-  .image1{
-  float: left;
-  padding: 0% 2% 5%;
-  height: 400px;
-  width: 400px;
-  }
-
-  .para2{
-text-align: justify;
-margin: 15% 0% 0% 3%;
-float: left;
-width: 42%;
-font-size: 1.1em;
-  }
-
-  .image2{
-  float: right;
-  margin: 6% 3% 11%;
-  height: 400px;
-  width: 400px;
-  }
-  .clear{
-  clear: both;
-  }
-
-  }
-   
-.divider{
-width: auto;
-height: 50px;
-position: relative;
-margin-bottom: 20px;
-}
-.divider hr {
-width: 100%;
-height: 3px;
-background: #fff;
-border-width: 1px 0px;
-border-style: solid;
-border-color: #eee;
-position: absolute;
-top: 23px;
-}
-div.img {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: left;
-    width: 280px;
-    
-}
-div.img img {
-   
-height: 300px;
-width: 278px;
-
-}
-div.img:hover {
-    border: 1px solid #777;
-}
-
-footer {
-
-      background-color: #011627;
-      padding: 15px;
-
-.icons{
-opacity: 0.8;
-margin: auto;
-width: 103%;
-text-align: center;
-padding: 0.5em;
-a{
-  margin-right: 1em;
-}
-img{
-  width: 30px;
-  height:30px; 
-  
-  
-  
-}
-    }
-  .icons a:hover{
-  opacity: 0.5;
-  }  
-  .foot-nav{
-  margin: auto;
-  text-align: center;
- width: 100%;
-padding-top: 1%;
-  
-ul > a{
-  text-decoration: none !important;
-  color: white;
-  } 
-  .foot-nav a:active,
-a:hover {
-  opacity: 0.5;
-}
-  }
-
-}
 
 a{
  text-decoration: none !important;
  }
- .button {
-    background-color: white; /* Green */
-    border: none;
-    color: black;
-    padding: 3px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    border: 1px solid grey
-}
-.button2:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-/* latin-ext */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/yQiAaD56cjx1AooMTSghGfY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
-}
-footer .foot-nav ul > a {
-    text-decoration: none !important;
-    color: white;
-    margin-right: 0.5em;
-    }
 
 
-.contact_body{
-  float: right;
-    margin-top: 10em;
-  p{
-  
-  text-align: justify;
+/* about section css fix */
 
-  margin-right: 9em;  
+
+.container .grid_7 {
+    max-width: 50%;
+
+    text-align: justify;
+}
+
+
+@media (max-width: 767px){
+   .container [class*="grid_"], .container-fluid [class*="grid_"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin-left: 0;
   }
-  .icons{
-    margin-top: 5%;
-    img{
-      width: 30px;
-        height:30px; 
-    }
-
-  }
-  .icons a:hover{
-  opacity: 0.5;
-  }  
-  
+}
+@media (min-width: 270px) and (max-width: 766px){
+.container [class*="grid_"], .container-fluid [class*="grid_"] {
+      float: none;
+    display: block;
+    max-width: 100%;
+    margin-left: 0;
+}
 }

@@ -1,20 +1,15 @@
-<div class="container text-center">
-<div class="title">
-<h1>Blogs</h1>
-</div>
-<div class="row">
-
-<% @posts.each do |post|%>
-<div class="col-sm-4"> 
-
-<div class="img"> 
-<%= image_tag post.image.url(:medium) %>
-
-<br>
-<b><div class="desc"><%= link_to post.title,  post, target: "_blank" %></div></b>
-</div>
-</div>
-
-<% end %>
-</div>
-</div>
+    <section class="well-8__ins-1">
+      <div class="container">
+        <hr>
+        <h2 class="center offset-3">latest articles</h2>
+        <div class="row offset-5">
+        <div class="row">
+        <% @posts.each do |post|%>
+        <div class="grid_6">
+         <article class="post inset__bot">
+         <%= image_tag post.image.url()%>
+         <div class="post_cnt__no-flow">
+		<%= link_to post.title,  post, target: "_blank" %>
+		   </article>
+          </div>
+          <% end %>
