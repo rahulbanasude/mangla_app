@@ -34,4 +34,7 @@
     height: -moz-available;
     width: -moz-available;
 }
+.post_cnt__no-flow {
+    text-align: center;
+}
 }
