@@ -38,3 +38,29 @@
     text-align: center;
 }
 }
+.workshop_carousel > .carousel-inner > .item img {
+width: 35%;
+margin: auto;
+}
+.workshop_content{
+	margin: 5% 0 0 0;
+text-align: justify;
+}
+.form{
+
+      width: 80%;
+      text-align: center;
+      margin: auto;
+.field{
+  margin-top: 1em;
+}
+.actions{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+  }
+	#flash-notice{
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}

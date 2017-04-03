@@ -15,12 +15,13 @@ Rails.application.routes.draw do
   get 'pages/contact_us'
   get 'pages/training'
   get 'pages/service'
-
+  get 'pages/workshop'
   resources :categories do
     resources :galleries, only: [:bridal, :portfolio]
 
   end
   resources :contacts, only: [:new, :create]
+  resources :workshops
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

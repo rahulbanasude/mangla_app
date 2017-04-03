@@ -1,0 +1,110 @@
+<div class="carousel-warpper">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="workshop_carousel">
+
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <%= image_tag("workshop1.jpg", alt: "image2", height: "800px", width: "1080",class: "img-responsive center-block") %>
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag("workshop2.jpg", alt: "image2", height: "800px", width: "1080px",class: "img-responsive center-block") %>
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <%= image_tag("workshop4.jpg", alt: "image4", height: "800px", width: "1080px",class: "img-responsive center-block") %>
+        <div class="carousel-caption">
+          <h3></h3>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="workshop_content">
+<p>
+  I am Mangla Banasude, beauty buisness coach, celebrity makeup artist and also an organic skin care brand.
+  Trained under Bollywood makeup artist, Nanara Berezina, world Gold Medalist from Russia, Diploma in beauty therapies[USA]
+</p>
+<p>
+Rich experience of 18 years, trained approx 150 Natural Salons, helped students to become entrepreneurs, trained and launched aspiring
+makeup artist on elite platforms like Mrs India Karnataka, Indian Bridal Show.
+</p>
+<p>
+During this workshop you learn international techniques of makeup, South Indian, North Indian Receptional Brides.
+Hairstyles complimenting the looks from Jada to Messy, placements of accessories and above all Bridal Consultation and many more.
+</p>
+<p>
+Join us to become a proffessional makeup artist in just a week.
+</p>
+</div>
+<p id="notice"><%= notice %></p>
+<div class="form">
+
+
+<%= form_for @workshop do |f| %>
+<% if @workshop.errors.any? %>
+<div id="errors">
+	<h2><%= pluralize(@contact.errors.count, "error") %> prevented this contact from saving</h2>
+	<ul>
+		<% @contact.errors.full_messages.each do |msg| %>
+		<li><%= msg %></li>
+		<% end %>
+			</ul>
+</div>
+<% end %>
+<p>
+<%= f.label :name %><br>
+<%= f.text_field :name, :required => true %>
+</p>
+
+<p>
+  <%= f.label :number %><br>
+  <%= f.text_field :number, :required => true %>
+</p>
+<p>
+  <%= f.label :email %><br>
+      <%= f.text_field :email, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}' %>
+</p>
+<p>
+  <%= f.label :message %><br>
+  <%= f.text_area :message %>
+</p>
+<p>
+  <%= f.submit "Submit" %>
+</p>
+
+<% end -%>
+</div>
+</div>

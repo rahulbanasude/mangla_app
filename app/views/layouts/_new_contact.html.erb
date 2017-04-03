@@ -20,7 +20,7 @@
 </p>
 <p>
   <%= f.label :email %><br>
-  <%= f.email_field :email %>
+  <%= f.text_field :email, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}' %>
 </p>
 <p>
   <%= f.label :"how did you come to know about us" %><br>
@@ -31,7 +31,7 @@
   <%= f.text_area :message %>
 </p>
 <p>
-  <%= f.submit %>
+  <%= f.submit "Submit" %>
 </p>
 
 <% end -%>
